@@ -1,0 +1,14 @@
+{
+  "llm": {
+    "base_url": "https://api.siliconflow.cn/v1/",
+    "api_key": "sk-jekqdrwasdehzlorjyetqmmsgbilaobjgnpzzhjwbpfjijqm",
+    "model": "Pro/zai-org/GLM-4.7"
+  },
+  "mcp_servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/your/path"]
+    }
+  },
+  "system_prompt": "You are a helpful AI coding assistant. You have access to tools for reading/writing files, running commands, and interacting with MCP servers."
+}

@@ -1,0 +1,21 @@
+[project]
+name = "tj-agent"
+version = "0.1.0"
+description = "A lightweight terminal AI coding agent with MCP support"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0.0",
+    "mcp>=1.0.0",
+    "rich>=13.0.0",
+    "prompt_toolkit>=3.0.0",
+]
+
+[project.scripts]
+tj-agent = "src.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
